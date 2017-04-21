@@ -1,0 +1,14 @@
+resolver: lts-8.5
+compiler: ghc-8.0.2
+
+nix:
+  enable: true
+  pure: true
+  packages:
+  - zlib
+
+packages:
+- ./
+
+extra-deps: []
+
