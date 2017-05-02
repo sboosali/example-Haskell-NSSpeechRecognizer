@@ -2,13 +2,18 @@ resolver: lts-8.5
 compiler: ghc-8.0.2
 
 nix:
-  enable: true
+  # enable: true
   pure: true
   packages:
   - zlib
 
 packages:
 - ./
+- ../Haskell-NSSpeechRecognizer
+- ../workflow-osx/workflow-osx-ffi
 
-extra-deps: []
-
+extra-deps:
+- NSSpeechRecognizer-0.0.0
+- workflow-osx-ffi-0.0.0
+- c-storable-deriving-0.1.3
+- spiros-0.0.0

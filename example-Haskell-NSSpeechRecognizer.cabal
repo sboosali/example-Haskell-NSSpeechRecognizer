@@ -43,12 +43,13 @@ library
   -fwarn-identities
 
  exposed-modules:
-                 NSSpeechRecognizer.Example
+                 NSSpeechRecognizer.You
 
  build-depends:
                base >=4.7 && <5
              , containers
              , NSSpeechRecognizer
+             , workflow-osx-ffi
 --              , stm
 
 executable example-Haskell-NSSpeechRecognizer
@@ -61,4 +62,3 @@ executable example-Haskell-NSSpeechRecognizer
  build-depends:
     base
   , example-Haskell-NSSpeechRecognizer
-
